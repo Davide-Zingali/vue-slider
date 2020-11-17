@@ -13,7 +13,6 @@ var slide = new Vue({
             'img/image3.jpg',
             'img/image4.jpg'
         ]
-
     },
     methods: {
         // funzione pulsante avanti
@@ -31,7 +30,7 @@ var slide = new Vue({
 
             // condizione fine carosello in negativo
             if (this.index < 0) {
-                this.index = 3;
+                this.index = (this.sorgenteImg.length - 1);
             }
         }
     }
